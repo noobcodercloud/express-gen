@@ -103,14 +103,6 @@ export default router
 
 fs.writeFileSync(path.join(pp, 'src/routes/routes.js'), routesContent);
 
-console.log(`Project '${pn}' created successfully!`);
-console.log(`
-Next steps:
-  cd ${pn}
-  npm install
-  npm run dev
-`);
-
 console.log(`✅ Project '${pn}' created successfully!`);
 
 // Create readline interface for user input
