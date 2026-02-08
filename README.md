@@ -87,7 +87,7 @@ The generated project includes:
 
 ## Author
 
-Your Name
+Kirat Dhiman
 
 ## License
 
