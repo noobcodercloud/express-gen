@@ -10,23 +10,24 @@ A simple Express.js project generator that sets up a complete Express app with f
 ✅ Environment variables with dotenv  
 ✅ Nodemon for development  
 ✅ Git-ready with .gitignore  
+✅ **Auto-install and start option** - Install dependencies and start server with one command!
 
 ## Installation & Usage
 
 ### Quick Start (No Installation)
 ```bash
-npx noobcoder-express-gen my-project-name
+npx noobcoder-express-gen your-project-name
 ```
 
 ### Global Installation
 ```bash
 npm install -g noobcoder-express-gen
-create-express-app my-project-name
+create-express-app your-project-name
 ```
 
 ## What Gets Created
 ```
-my-project-name/
+your-project-name/
 ├── src/
 │   ├── controllers/
 │   ├── models/
@@ -44,7 +45,7 @@ my-project-name/
 
 After generating your project:
 ```bash
-cd my-project-name
+cd your-project-name
 npm install
 npm run dev
 ```
