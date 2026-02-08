@@ -1,5 +1,5 @@
 {
-  "name": "express-gen",
+  "name": "speed-express-gen",
   "version": "1.0.1",
   "description": "Custom Express project generator",
   "main": "index.js",
