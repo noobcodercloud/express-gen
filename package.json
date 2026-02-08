@@ -1,6 +1,6 @@
 {
   "name": "speed-express-gen",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Custom Express project generator",
   "main": "index.js",
   "type": "module",
