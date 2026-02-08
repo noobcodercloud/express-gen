@@ -1,4 +1,4 @@
-# noobcoder-express-gen
+# speed-express-gen
 
 A simple Express.js project generator that sets up a complete Express app with folder structure in seconds.
 
@@ -16,13 +16,32 @@ A simple Express.js project generator that sets up a complete Express app with f
 
 ### Quick Start (No Installation)
 ```bash
-npx noobcoder-express-gen your-project-name
+npx speed-express-gen your-project-name
 ```
 
 ### Global Installation
 ```bash
-npm install -g noobcoder-express-gen
+npm install -g speed-express-gen
 create-express-app your-project-name
+```
+
+## Usage
+```bash
+npx speed-express-gen your-project
+```
+
+The generator will ask if you want to automatically install dependencies and start the server.
+
+**If you choose Yes (Y):**
+- Dependencies will be installed automatically
+- Server will start immediately
+
+**If you choose No (n):**
+- You can manually run:
+```bash
+  cd my-project
+  npm install
+  npm run dev
 ```
 
 ## What Gets Created
