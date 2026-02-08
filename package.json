@@ -1,0 +1,13 @@
+{
+  "name": "noobcoder-express-gen",
+  "version": "1.0.0",
+  "description": "Custom Express project generator",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "create-express-app": "./index.js"
+  },
+  "keywords": ["express", "generator", "nodejs"],
+  "author": "Your Name",
+  "license": "ISC"
+}
