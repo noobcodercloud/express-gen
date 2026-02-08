@@ -2,6 +2,8 @@
 
 import path from "path"
 import fs from "fs"
+import readline from "readline"
+import { exec } from "child_process"
 
 // e -> express
 // fs -> fs module
@@ -108,3 +110,46 @@ Next steps:
   npm install
   npm run dev
 `);
+
+console.log(`✅ Project '${pn}' created successfully!`);
+
+// Create readline interface for user input
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+// Ask user if they want to install and run
+rl.question('\nInstall dependencies and start server? (Y/N): ', (answer) => {
+  const shouldInstall = answer.toLowerCase() !== 'n';
+  
+  rl.close();
+  
+  if (shouldInstall) {
+    console.log('\nInstalling dependencies...');
+    
+    exec('npm install', { cwd: pp }, (error, stdout, stderr) => {
+      if (error) {
+        console.error('❌ Error installing dependencies:', error.message);
+        return;
+      }
+      
+      console.log('Dependencies installed!');
+      console.log('\nStarting server...\n');
+      
+      // Start the server
+      exec('npm run dev', { cwd: pp }, (error, stdout, stderr) => {
+        if (error) {
+          console.error('Error starting server:', error.message);
+          return;
+        }
+      }).stdout.pipe(process.stdout);
+    });
+  } else {
+    console.log(`\n📦 Next steps:
+  cd ${pn}
+  npm install
+  npm run dev
+    `);
+  }
+});
