@@ -1,13 +1,17 @@
 {
   "name": "express-gen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Custom Express project generator",
   "main": "index.js",
   "type": "module",
   "bin": {
     "create-express-app": "./index.js"
   },
-  "keywords": ["express", "generator", "nodejs"],
+  "keywords": [
+    "express",
+    "generator",
+    "nodejs"
+  ],
   "author": "Your Name",
   "license": "ISC"
 }
