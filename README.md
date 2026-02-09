@@ -44,47 +44,10 @@ The generator will ask if you want to automatically install dependencies and sta
   npm run dev
 ```
 
-## What Gets Created
-```
-your-project-name/
-├── src/
-│   ├── controllers/
-│   ├── models/
-│   ├── middlewares/
-│   ├── routes/
-│   │   └── routes.js
-│   └── main.js
-├── tests/
-├── .env
-├── .gitignore
-└── package.json
-```
-
 ## Available Scripts
 
 - `npm start` - Run the server in production mode
 - `npm run dev` - Run with nodemon for development
-
-## API Routes
-
-- `GET /` - Returns welcome message
-- `GET /api/test` - Test route to verify API is working
-
-## Environment Variables
-
-Create a `.env` file with:
-```env
-PORT=3000
-MONGO_URI=your_mongodb_connection_string
-```
-
-## Customize
-
-Feel free to modify the generated files:
-- Add more routes in `src/routes/`
-- Create controllers in `src/controllers/`
-- Define models in `src/models/`
-- Add middleware in `src/middlewares/`
 
 ## Dependencies
 
@@ -108,7 +71,7 @@ Found a bug or want to add a feature? Feel free to open an issue or submit a pul
 
 ## Changelog
 
-### v1.0.0
+### v1.2.0
 - Initial release
 - Basic Express setup with folder structure
 - MongoDB/Mongoose support
