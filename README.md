@@ -39,7 +39,7 @@ The generator will ask if you want to automatically install dependencies and sta
 **If you choose No (n):**
 - You can manually run:
 ```bash
-  cd my-project
+  cd your-project
   npm install
   npm run dev
 ```
@@ -59,17 +59,6 @@ your-project-name/
 ├── .gitignore
 └── package.json
 ```
-
-## Getting Started
-
-After generating your project:
-```bash
-cd your-project-name
-npm install
-npm run dev
-```
-
-Your server will start on `http://localhost:3000`
 
 ## Available Scripts
 
